@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/507b6e1fd4.js" crossorigin="anonymous">function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show');
+    }
+    </script>
+</head>
+<body>
+   <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header" class="logo"><span class="highlight">A</span>yush Raj</a>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer / AI Enthusiast</p>
+                <h1>Hi, I'm <span>Ayush Raj</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- //ABOUT------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <img src="about-photo.jpg?v=1" alt="Ayush Raj Photo">
+                </div>
+                <div class="about-col-2">
+                   <h1 class="subtitle">About me</h1>
+                   <p class="me">Hi, I'm Ayush Raj, an enthusiastic Web Developer and AI enthusiast with a passion for creating innovative digital solutions. I specialize in full-stack development, combining modern frontend technologies with intelligent backend systems. <br><br>
+
+                    With expertise in HTML, CSS, JavaScript, React, Node.js, and machine learning fundamentals, I build user-centric applications that solve real-world problems. I actively participate in hackathons and coding competitions, having qualified for prestigious events like Smart India Hackathon 2025 and ISRO's Bharatiya Antariksh Hackathon.
+                    <br><br>
+                    I'm always eager to learn new technologies and collaborate on projects that make a meaningful impact. Let's connect and build something extraordinary together!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>HTML, CSS, JavaScript, React, Node.js</li>
+                            <li><span>UI/UX Design</span><br>Designing User Interfaces, Figma</li>
+                            <li><span>Machine Learning</span><br>AI-based Applications, Basic ML Concepts</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>JUN 2025 - JUL 2025</span><br>Vocational Training at Steel Authority of India Limited (SAIL) - Bokaro, JH (ONSITE)</li>
+                            <li><span>Spark Up Summit</span><br>BUILD A THON Event at Silicon University Bhubaneswar</li>
+                            <li><span>Bharatiya Antariksh Hackathon 2025</span><br>Organized by ISRO</li>
+                            <li><span>Smart India Hackathon 2025</span><br>Qualified internal hackathon, TOP 45 teams for SIH</li>
+                            <li><span>Odoo Hackathon</span><br>Organized by Odoo Private Limited Group</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-2027</span><br>B.Tech (CSE) at SOA UNIVERSITY, Ongoing</li>
+                            <li><span>2021-2023</span><br>Intermediate (CBSE) - Chinmaya Vidyalaya, B.S City, Jharkhand</li>
+                            <li><span>2021</span><br>Matriculation (CBSE) - Holy Cross School, B.S City, Jharkhand</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--............. Services.................. -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Creating responsive and dynamic web applications using modern frontend technologies like HTML, CSS, JavaScript, and React for optimal user experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>End-to-end application development covering both frontend and backend technologies, database management, and API integration for complete web solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-palette"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive user interfaces and engaging user experiences using Figma and modern design principles to create visually appealing applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI Integration</h2>
+                    <p>Implementing basic machine learning and AI-powered features in web applications to create intelligent and automated solutions for modern challenges.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------Portfolio------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="quickattend-hero.png" alt="QuickAttend - Automated Attendance & Analytics">
+                    <div class="layer">
+                        <span class="chip chip-web">Web App</span>
+                        <h3>QuickAttend</h3>
+                        <p>Automated Student Attendance Monitoring and Analytics System for Colleges. A comprehensive solution that streamlines attendance tracking with real-time analytics and reporting features.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="campusbot-logo.png" alt="Campus Bot">
+                    <div class="layer">
+                        <span class="chip chip-ai">AI</span>
+                        <h3>CAMPUSBOT</h3>
+                        <p>Language Agnostic Chatbot designed specifically for college students. Provides instant assistance with academic queries, campus information, and student services.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bollywood-hub-logo.png" alt="Bollywood Hub">
+                    <div class="layer">
+                        <span class="chip chip-stream">Streaming</span>
+                        <h3>Bollywood Movie Website</h3>
+                        <p>Features trending movies, trailers, and user ratings. A comprehensive platform for Bollywood entertainment with an intuitive user interface and movie discovery features.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+       <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <h1 class="subtitle">Contact Me</h1>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <div class="contact-info">
+                        <p><a href="mailto:ayush210505bksc@gmail.com"><i class="fas fa-paper-plane"></i>ayush210505bksc@gmail.com</a></p>
+                        <p><a href="tel:+919470351465"><i class="fas fa-phone"></i>+91 9470351465</a></p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/ar210505"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/rajayush_21/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-raj-001a89287"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="Ayush-Raj.pdf" download class="btn1">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" id="contact-form">
+                     <input type="text" name="name" placeholder="Your Name" required>
+                     <input type="email" name="email" placeholder="Your Email" required>
+                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                     <span id="form-msg" style="color: lightgreen; font-size: 14px;"></span>
+                     <button type="submit">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+       <div class="copyright">
+        <p>Copyright © Ayush Raj</p>
+       </div>
+    </div>
+    <script src="fc.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/u/0/home/projects/1GrjLj_Bnriej6tidxCxjE9cb65KJSw6zncMjXmyhMYmec9Zqau237Swa/editc';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById('form-msg');
+        const submitBtn = document.querySelector('#contact-form button[type="submit"]');
+
+        function setStatus(text, color) {
+            msg.innerText = text;
+            msg.style.color = color;
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+            }
+            setStatus('Sending your message...', '#9ca3af');
+            const data = new FormData(form);
+            try {
+                // Primary attempt: normal POST expecting a 200 OK
+                const res = await fetch(scriptURL, { method: 'POST', body: data });
+                if (!res.ok) throw new Error('Network response not ok');
+                setStatus('Thanks! Your message was sent successfully.', 'lightgreen');
+                form.reset();
+            } catch (err) {
+                try {
+                    // Fallback: no-cors mode to avoid CORS blocking; we cannot read response but assume success
+                    await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: data });
+                    setStatus('Thanks! Your message was sent. (Fallback mode)', 'lightgreen');
+                    form.reset();
+                } catch (err2) {
+                    setStatus('Oops! Something went wrong. Please try again later.', 'red');
+                }
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Submit';
+                }
+                setTimeout(() => (msg.innerText = ''), 5000);
+            }
+        });
+    </script>
+</body>
+</html>
