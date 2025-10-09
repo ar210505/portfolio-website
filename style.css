@@ -34,13 +34,12 @@ body{
     /* Raise focal point more to include full head/hair */
     background-position: center 12%;
     background-repeat: no-repeat;
-    /* Subtle blur so the face blends with the page */
-    filter: blur(2px);
-    /* Avoid visible blur clipping at the edges */
-    transform: scale(1.02);
+    /* Unblur for preview */
+    filter: none;
+    transform: none;
     transform-origin: right center;
     pointer-events: none;
-    will-change: filter, transform;
+    will-change: auto;
 }
 #header::after{ content: none; }
 #header > .container{ position: relative; z-index: 1; }
