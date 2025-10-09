@@ -211,8 +211,8 @@ flex-wrap: wrap;
     display: block;
 }
 /* Experience tab: title (top line) blue, meta/date (below) white */
-#experience li strong{ color: #3b82f6; }
-#experience li .exp-meta{ color: #ffffff; }
+#experience li strong{ color: #3b82f6 !important; }
+#experience li .exp-meta{ color: #ffffff !important; }
 /* ----------------------------Services------------------- */
 #services{
     padding: 30px 0;
