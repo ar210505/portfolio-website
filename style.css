@@ -210,6 +210,9 @@ flex-wrap: wrap;
 .tab-contents.active-tab{
     display: block;
 }
+/* Experience tab: title (top line) blue, meta/date (below) white */
+#experience li strong{ color: #3b82f6; }
+#experience li .exp-meta{ color: #ffffff; }
 /* ----------------------------Services------------------- */
 #services{
     padding: 30px 0;
