@@ -31,8 +31,8 @@ body{
     width: 50%;
     background-image: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.30) 60%, rgba(0,0,0,0.40) 100%), url('hero-bg.jpg?v=4');
     background-size: cover;
-    /* Raise focal point slightly to include full head/hair */
-    background-position: center 28%;
+    /* Raise focal point more to include full head/hair */
+    background-position: center 12%;
     background-repeat: no-repeat;
     /* Subtle blur so the face blends with the page */
     filter: blur(2px);
@@ -50,8 +50,8 @@ body{
 @media (max-width: 900px){
     #header::before{
         width: 100%; height: 45vh; right: auto; left: 0;
-    /* Mobile: a bit higher so head isn't cropped */
-    background-position: center 24%;
+    /* Mobile: higher so head isn't cropped on short viewports */
+    background-position: center 8%;
     }
 }
 .container{
