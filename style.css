@@ -145,13 +145,15 @@ flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 500px;
 }
 .about-col-1 img{
     width: 100%;
-    max-width: 520px;
+    max-width: 420px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    object-fit: cover;
 }
 .about-col-2{
     flex-basis: 60%;
