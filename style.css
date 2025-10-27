@@ -32,7 +32,7 @@ body{
     background-image: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.30) 60%, rgba(0,0,0,0.40) 100%), url('hero-bg.jpg?v=10');
     background-size: cover;
     /* Move image down further to avoid nav collision */
-    background-position: center 35%;
+    background-position: center 48%;
     background-repeat: no-repeat;
     /* Unblur for preview */
     filter: none;
@@ -49,8 +49,8 @@ body{
 @media (max-width: 900px){
     #header::before{
         width: 100%; height: 45vh; right: auto; left: 0;
-    /* Mobile: higher so head isn't cropped on short viewports */
-    background-position: center 8%;
+    /* Mobile: safe spacing from nav */
+    background-position: center 30%;
     }
 }
 .container{
