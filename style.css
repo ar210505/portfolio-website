@@ -146,6 +146,7 @@ flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     min-height: 500px;
+    padding-top: 60px;
 }
 .about-col-1 img{
     width: 100%;
