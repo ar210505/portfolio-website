@@ -31,8 +31,8 @@ body{
     width: 50%;
     background-image: linear-gradient(180deg, rgba(0,0,0,0.20) 0%, rgba(0,0,0,0.30) 60%, rgba(0,0,0,0.40) 100%), url('hero-bg.jpg?v=10');
     background-size: cover;
-    /* Move image DOWN (away from navbar): lower percentage pushes picture downward */
-    background-position: center 40%;
+    /* Move image further DOWN by 10% from previous */
+    background-position: center 50%;
     background-repeat: no-repeat;
     /* Unblur for preview */
     filter: none;
@@ -49,8 +49,8 @@ body{
 @media (max-width: 900px){
     #header::before{
         width: 100%; height: 45vh; right: auto; left: 0;
-    /* Mobile: also move downward a bit from previous */
-    background-position: center 30%;
+    /* Mobile: move downward by 10% from previous */
+    background-position: center 40%;
     }
 }
 .container{
